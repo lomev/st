@@ -6,3 +6,4 @@
 - scrollback
 - scrollback-wheel
 - xresources
+- external-pipe
