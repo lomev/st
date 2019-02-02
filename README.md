@@ -1,4 +1,3 @@
-# My fork of suckless terminal
 ## Added patches
 
 - clipboard
