@@ -4,5 +4,5 @@
 - scrollback
 - scrollback-wheel
 - xresources
-- external-pipe
+- externalpipe
 - st-vertcenter
