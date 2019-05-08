@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVu Sans Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font = "DejaVu Sans Mono:pixelsize=13:antialias=true:autohint=true";
 static int borderpx = 14;
 
 /*
@@ -85,24 +85,24 @@ unsigned int tabspaces = 4;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#050505",
+	"#fa2020",
+	"#66cc99",
+	"#ff8000",
+	"#6699cc",
+	"#f953a6",
+	"#66cccc",
+	"#ffffff",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#ffffff",
+	"#fb6464",
+	"#99ffcc",
+	"#ff9225",
+	"#99ccff",
+	"#f969b1",
+	"#99ffff",
+	"#ffffff",
 
 	[255] = 0,
 
@@ -150,54 +150,13 @@ static unsigned int mousebg = 0;
 static unsigned int defaultattr = 11;
 
 /*
- * Xresources preferences to load at startup
- */
-ResourcePref resources[] = {
-		{ "font",         STRING,  &font },
-		{ "color0",       STRING,  &colorname[0] },
-		{ "color1",       STRING,  &colorname[1] },
-		{ "color2",       STRING,  &colorname[2] },
-		{ "color3",       STRING,  &colorname[3] },
-		{ "color4",       STRING,  &colorname[4] },
-		{ "color5",       STRING,  &colorname[5] },
-		{ "color6",       STRING,  &colorname[6] },
-		{ "color7",       STRING,  &colorname[7] },
-		{ "color8",       STRING,  &colorname[8] },
-		{ "color9",       STRING,  &colorname[9] },
-		{ "color10",      STRING,  &colorname[10] },
-		{ "color11",      STRING,  &colorname[11] },
-		{ "color12",      STRING,  &colorname[12] },
-		{ "color13",      STRING,  &colorname[13] },
-		{ "color14",      STRING,  &colorname[14] },
-		{ "color15",      STRING,  &colorname[15] },
-		{ "background",   STRING,  &colorname[256] },
-		{ "foreground",   STRING,  &colorname[257] },
-		{ "cursorColor",  STRING,  &colorname[258] },
-		{ "termname",     STRING,  &termname },
-		{ "shell",        STRING,  &shell },
-		{ "xfps",         INTEGER, &xfps },
-		{ "actionfps",    INTEGER, &actionfps },
-		{ "blinktimeout", INTEGER, &blinktimeout },
-		{ "bellvolume",   INTEGER, &bellvolume },
-		{ "tabspaces",    INTEGER, &tabspaces },
-		{ "cwscale",      FLOAT,   &cwscale },
-		{ "chscale",      FLOAT,   &chscale },
-};
-
-/*
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
  */
 static MouseShortcut mshortcuts[] = {
 	/* button               mask            string */
-	{ Button4,              XK_NO_MOD,      "\031" },
-	{ Button5,              XK_NO_MOD,      "\005" },
-};
-
-MouseKey mkeys[] = {
-	/* button               mask            function        argument */
-	{ Button4,              ShiftMask,      kscrollup,      {.i =  1} },
-	{ Button5,              ShiftMask,      kscrolldown,    {.i =  1} },
+	{ Button4,              XK_ANY_MOD,      "\031" },
+	{ Button5,              XK_ANY_MOD,      "\005" },
 };
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
