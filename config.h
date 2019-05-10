@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVu Sans Mono:pixelsize=13:antialias=true:autohint=true";
-static int borderpx = 14;
+static char *font = "DejaVu Sans Mono:pixelsize=14:antialias=true:autohint=true";
+static int borderpx = 12;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -84,31 +84,31 @@ unsigned int tabspaces = 4;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"#050505",
-	"#fa2020",
-	"#66cc99",
-	"#ff8000",
-	"#6699cc",
-	"#f953a6",
-	"#66cccc",
-	"#ffffff",
+    /* 8 normal colors */
+    "#050505",
+    "#8c4665",
+    "#287373",
+    "#7c7c99",
+    "#395573",
+    "#5e468c",
+    "#31658c",
+    "#eeeeee",
 
-	/* 8 bright colors */
-	"#ffffff",
-	"#fb6464",
-	"#99ffcc",
-	"#ff9225",
-	"#99ccff",
-	"#f969b1",
-	"#99ffff",
-	"#ffffff",
+    /* 8 bright colors */
+    "#3d3d3d",
+    "#bf4d80",
+    "#53a6a6",
+    "#9e9ecb",
+    "#477ab3",
+    "#7e62b3",
+    "#6096bf",
+    "#c0c0c0",
 
-	[255] = 0,
+    [255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+    /* more colors can be added after 255 to use with DefaultXX */
+    "#cccccc",
+    "#555555",
 };
 
 /*
