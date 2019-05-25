@@ -1,6 +1,6 @@
 # Fork of st - the suckless terminal
 
-[st](https://st.suckless.org) with additional features that make it very useful terminal.
+[st](https://st.suckless.org) with additional features and solarized colorscheme.
 
 ## Added patches
 
