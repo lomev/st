@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVu Sans Mono:pixelsize=14:antialias=true:autohint=true";
-static int borderpx = 12;
+static char *font = "DejaVu Sans Mono:pixelsize=15:antialias=true:autohint=true";
+static int borderpx = 3;
 
 /*
  * What program is execed by st depends of these precedence rules:
