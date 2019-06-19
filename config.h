@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "DejaVu Sans Mono:pixelsize=15:antialias=true:autohint=true";
-static int borderpx = 3;
+static char *font = "DejaVu Sans Mono:pixelsize=14:antialias=true:autohint=true";
+static int borderpx = 8;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -81,33 +81,39 @@ char *termname = "st-256color";
  *	stty tabs
  */
 unsigned int tabspaces = 4;
-
-/* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    "#073642",  /*  0: black    */
-    "#dc322f",  /*  1: red      */
-    "#859900",  /*  2: green    */
-    "#b58900",  /*  3: yellow   */
-    "#268bd2",  /*  4: blue     */
-    "#d33682",  /*  5: magenta  */
-    "#2aa198",  /*  6: cyan     */
-    "#eee8d5",  /*  7: white    */
-    "#002b36",  /*  8: brblack  */
-    "#cb4b16",  /*  9: brred    */
-    "#586e75",  /* 10: brgreen  */
-    "#657b83",  /* 11: bryellow */
-    "#839496",  /* 12: brblue   */
-    "#6c71c4",  /* 13: brmagenta*/
-    "#93a1a1",  /* 14: brcyan   */
-    "#fdf6e3",  /* 15: brwhite  */
+
+  /* 8 normal colors */
+  [0] = "#333333", /* black   */
+  [1] = "#8c4665", /* red     */
+  [2] = "#287373", /* green   */
+  [3] = "#7c7c99", /* yellow  */
+  [4] = "#395573", /* blue    */
+  [5] = "#5e468c", /* magenta */
+  [6] = "#31658c", /* cyan    */
+  [7] = "#899ca1", /* white   */
+
+  /* 8 bright colors */
+  [8]  = "#3d3d3d", /* black   */
+  [9]  = "#bf4d80", /* red     */
+  [10] = "#53a6a6", /* green   */
+  [11] = "#9e9ecb", /* yellow  */
+  [12] = "#477ab3", /* blue    */
+  [13] = "#7e62b3", /* magenta */
+  [14] = "#6096bf", /* cyan    */
+  [15] = "#c0c0c0", /* white   */
+
+  /* special colors */
+  [256] = "#111111", /* background */
+  [257] = "#eeeeee", /* foreground */
 };
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 12;
-unsigned int defaultbg = 8;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
 static unsigned int defaultcs = 14;
 static unsigned int defaultrcs = 15;
 
