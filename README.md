@@ -12,7 +12,7 @@
 ## Installation
 
 ```
-git clone https://github.com/reiffarth/st
+git clone https://github.com/lomev/st
 cd st
 make
 sudo make install
