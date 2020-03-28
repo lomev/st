@@ -8,6 +8,8 @@
 - [scrollback](http://st.suckless.org/patches/scrollback)
 - [externalpipe](http://st.suckless.org/patches/externalpipe)
 - [vertcenter](http://st.suckless.org/patches/vertcenter)
+- [newterm](http://st.suckless.org/patches/newterm)
+- [xresources](http://st.suckless.org/patches/xresources)
 
 ## Installation
 
