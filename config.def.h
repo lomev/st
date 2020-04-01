@@ -80,6 +80,7 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
+
 unsigned int tabspaces = 4;
 static const char *colorname[] = {
     "#073642",  /*  0: black    */
