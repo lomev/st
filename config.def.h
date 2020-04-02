@@ -82,6 +82,7 @@ char *termname = "st-256color";
  */
 
 unsigned int tabspaces = 4;
+
 static const char *colorname[] = {
     "#073642",  /*  0: black    */
     "#dc322f",  /*  1: red      */
@@ -181,8 +182,14 @@ ResourcePref resources[] = {
  */
 static MouseShortcut mshortcuts[] = {
 	/* button               mask            string */
-	{ Button4,              XK_ANY_MOD,      "\031" },
-	{ Button5,              XK_ANY_MOD,      "\005" },
+	{ Button4,              XK_NO_MOD,      "\031" },
+	{ Button5,              XK_NO_MOD,      "\005" },
+};
+
+MouseKey mkeys[] = {
+	/* button               mask            function        argument */
+	{ Button4,              ShiftMask,      kscrollup,      {.i =  1} },
+	{ Button5,              ShiftMask,      kscrolldown,    {.i =  1} },
 };
 
 static char *openurlcmd[] = { "/bin/sh", "-c",
