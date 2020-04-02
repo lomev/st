@@ -83,6 +83,10 @@ char *termname = "st-256color";
 
 unsigned int tabspaces = 4;
 
+/* bg opacity */
+float alpha = 0.8;           //< alpha value used when the window is focused.
+float alphaUnfocussed = 0.6; //< alpha value used when the focus is lost
+
 static const char *colorname[] = {
     "#073642",  /*  0: black    */
     "#dc322f",  /*  1: red      */

@@ -11,6 +11,7 @@
 - [newterm](http://st.suckless.org/patches/newterm)
 - [xresources](http://st.suckless.org/patches/xresources)
 - [anysize](http://st.suckless.org/patches/anysize)
+- [alphaFocusHighlight](http://st.suckless.org/patches/alphaFocusHighlight)
 
 ## Installation
 
