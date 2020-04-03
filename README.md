@@ -4,14 +4,14 @@
 
 ## Added patches
 
-- [clipboard](http://st.suckless.org/patches/clipboard)
-- [scrollback](http://st.suckless.org/patches/scrollback)
-- [externalpipe](http://st.suckless.org/patches/externalpipe)
-- [vertcenter](http://st.suckless.org/patches/vertcenter)
-- [newterm](http://st.suckless.org/patches/newterm)
-- [xresources](http://st.suckless.org/patches/xresources)
-- [anysize](http://st.suckless.org/patches/anysize)
-- [alphaFocusHighlight](http://st.suckless.org/patches/alphaFocusHighlight)
+- [clipboard](https://st.suckless.org/patches/clipboard)
+- [scrollback](https://st.suckless.org/patches/scrollback)
+- [externalpipe](https://st.suckless.org/patches/externalpipe)
+- [vertcenter](https://st.suckless.org/patches/vertcenter)
+- [newterm](https://st.suckless.org/patches/newterm)
+- [xresources](https://st.suckless.org/patches/xresources)
+- [anysize](https://st.suckless.org/patches/anysize)
+- [alphaFocusHighlight](https://st.suckless.org/patches/alpha_focus_highlight)
 
 ## Installation
 
