@@ -12,6 +12,7 @@
 - [xresources](http://st.suckless.org/patches/xresources)
 - [anysize](http://st.suckless.org/patches/anysize)
 - [alphaFocusHighlight](http://st.suckless.org/patches/alphaFocusHighlight)
+- [keyboard_select](http://st.suckless.org/patches/keyboard_select)
 
 ## Installation
 
