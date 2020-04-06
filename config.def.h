@@ -206,6 +206,7 @@ static char *copyurlcmd[] = { "/bin/sh", "-c",
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
+#define TERMMOD (ControlMask|ShiftMask)
 
 static Shortcut shortcuts[] = {
     /* mask                 keysym          function        argument */
@@ -213,20 +214,21 @@ static Shortcut shortcuts[] = {
     { ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
     { ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
     { XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
-    { MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
-    { MODKEY,               XK_space,       keyboard_select,{ 0 } },
-    { MODKEY|ShiftMask,     XK_Return,      newterm,        {.i =  0} },
     { MODKEY|ShiftMask,     XK_j,           zoom,           {.f = -1} },
     { MODKEY|ShiftMask,     XK_k,           zoom,           {.f = +1} },
     { MODKEY,               XK_Home,        zoomreset,      {.f =  0} },
     { MODKEY,               XK_c,           clipcopy,       {.i =  0} },
     { MODKEY,               XK_v,           clippaste,      {.i =  0} },
     { MODKEY,               XK_p,           selpaste,       {.i =  0} },
+    { ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
+    { TERMOD,               XK_Num_Lock,    numlock,        {.i =  0} },
+    { MODKEY,               XK_space,       keyboard_select,{ 0 } },
+    { MODKEY|ShiftMask,     XK_Return,      newterm,        {.i =  0} },
     { MODKEY,               XK_k,           kscrollup,      {.i =  1} },
     { MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
     { MODKEY,               XK_u,           kscrollup,      {.i = -1} },
     { MODKEY,               XK_d,           kscrolldown,    {.i = -1} },
-    { MODKEY,               XK_l,           externalpipe,   {.v = openurlcmd} },
+    { MODKEY,               XK_o,           externalpipe,   {.v = openurlcmd} },
     { MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd} },
 };
 
