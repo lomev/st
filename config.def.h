@@ -221,7 +221,7 @@ static Shortcut shortcuts[] = {
     { MODKEY,               XK_v,           clippaste,      {.i =  0} },
     { MODKEY,               XK_p,           selpaste,       {.i =  0} },
     { ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
-    { TERMOD,               XK_Num_Lock,    numlock,        {.i =  0} },
+    { TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
     { MODKEY,               XK_space,       keyboard_select,{ 0 } },
     { MODKEY|ShiftMask,     XK_Return,      newterm,        {.i =  0} },
     { MODKEY,               XK_k,           kscrollup,      {.i =  1} },
